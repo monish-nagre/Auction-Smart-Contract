@@ -275,7 +275,7 @@ pub struct Close<'info> {
     /// CHECK: This is not dangerous because we don't read or write from this account
     pub token_program: AccountInfo<'info>,
     /// CHECK: This is not dangerous because we don't read or write from this account
-    system_program: Program<'info, System>,
+    pub system_program: Program<'info, System>,
 }
 
 #[derive(Accounts)]
@@ -304,7 +304,7 @@ pub struct Closenft<'info> {
     /// CHECK: This is not dangerous because we don't read or write from this account
     pub token_program: AccountInfo<'info>,
     /// CHECK: This is not dangerous because we don't read or write from this account
-    system_program: Program<'info, System>,
+    pub system_program: Program<'info, System>,
 }
 
 impl<'info> Exhibit<'info> {
